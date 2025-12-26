@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: linear-gradient(135deg #eef2ff, #f8fafc);
+}
+
+.open-btn {
+    padding: 14px 36px;
+    background: #111827;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.card {
+    width: 360px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px 28px;
+    text-align: center;
+    box-sizing: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: ScaleIn .3s ease;
+}
+
+@keyframes ScaleIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
